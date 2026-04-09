@@ -10,16 +10,17 @@
 body {
   background: #F5F5F5;
   color: #111827;
-  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 16px;   /* 👈 ADD THIS */
+  padding: 0 20px;   /* 👈 ADD THIS */
   background: #ffffff;
 }
+
+
 
 
 /*=========================== hero ==========================*/
@@ -32,8 +33,10 @@ body {
   padding: 0px 10px;
   overflow: hidden;
   background-color: #FFFFFF;
-  border-radius: 1px solid CBD5E1;
-  background: url(images/hero/abstract-pui-73-background-wallpaper-gradient\ 1.svg);
+  background: url("images/hero/abstract-pui-73-background-wallpaper-gradient.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*=========================== navbar ==========================*/
@@ -41,8 +44,7 @@ body {
 
 .navbar {
   width: 100%;
-  padding: 10px 60px;
-
+  padding: 16px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -308,10 +310,10 @@ body {
 .features-grid {
   width: 100%;
   margin-top:75px;
-  padding: 0px 60px;
+  padding: 0 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px 0px;
+  gap: 30px;
 }
 
 .feature-card {
@@ -573,7 +575,8 @@ body {
   transition: 0.3s;
 
   display: inline-block; /* ✅ MUST */
-  width: 336px;
+  width: 100%;
+  max-width: 336px;
   margin-bottom: 15px; /* spacing between cards */
 }
 
@@ -665,7 +668,8 @@ body {
 
 .office-top {
   max-width: 700px;
-  margin: 0 72px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .section-badge4 {
@@ -704,6 +708,7 @@ body {
   gap: 20px;
   max-width: 1100px;
   margin: auto;
+  align-items: center;
 }
 
 .office-card {
@@ -878,24 +883,29 @@ body {
 
 /*=========================== cta ==========================*/
 
-.cta {
-  width: 100%;
-  height: auto;
-  padding: 0; 
-  margin: 0;
-  background: #EEF2FF;
-  overflow: hidden; 
-
-}
+.cta { 
+      width: 100%; 
+      padding: 0; 
+      background: #EEF2FF;
+      overflow: hidden; 
+      height: auto;
+    }
 
 .cta-container {
   max-width: 100%;
-  height: auto;
   background-color: #EEF2FF;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+   
+  margin-right: 0;
+  gap: 20px;
 }
+
+ 
+
+
 
 .cta-left {
   flex: 1;
@@ -924,18 +934,17 @@ body {
 
 .cta-buttons {
   display: flex;
-  gap: 16px;
+  gap: 10px;
 }
 
 .cta-buttons button {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   letter-spacing: -0.7%;
   padding: 12px 20px;
   border-radius: 999px;
   cursor: pointer;
-  transition: all 0.25s ease;
 }
 
 .btn-outline {
@@ -946,6 +955,7 @@ body {
 
 .btn-outline:hover {
   background: #EEF2FF;
+  transform: translateY(-2px);
 }
 
 .btn-fill {
@@ -957,8 +967,8 @@ body {
 }
 
 .btn-fill:hover {
-  transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(99, 102, 241, 0.35);
+  transform: translateY(-2px);
 }
 
 .cta-right {
@@ -970,9 +980,18 @@ body {
   align-items: center;
 }
 
+.cta-right img {
+  width: 100%;
+  max-width: 600px;
+}
 
+    
 
 /*=========================== Footer ==========================*/
+
+
+
+
 
 
 .footer {
@@ -1060,6 +1079,3 @@ body {
   color: #94A3B8;
   margin: 0;
 }
-
-
-
