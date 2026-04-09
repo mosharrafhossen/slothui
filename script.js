@@ -1,0 +1,125 @@
+
+
+/* =========================================================
+   FAQ ACCORDION FUNCTIONALITY
+   - Only one item stays open at a time
+   - Click toggles active state
+========================================================= */
+
+const items = document.querySelectorAll(".faq-item");
+
+items.forEach(item => {
+  const btn = item.querySelector(".faq-question");
+
+  btn.addEventListener("click", () => {
+
+    items.forEach(i => {
+      if (i !== item) i.classList.remove("active");
+    });
+
+    item.classList.toggle("active");
+  });
+});
+
+
+/* =========================================================
+   SCROLL TO TOP BUTTON
+   - Smooth scroll to top when footer icon is clicked
+========================================================= */
+
+const scrollTopBtn = document.querySelector(".footer-bottom i");
+
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+
+/* =========================================================
+   PROCRASTINATOR SECTION INTERACTION
+   - Highlights selected item
+   - Only one active at a time
+========================================================= */
+
+const proItems = document.querySelectorAll(".pro-item");
+
+proItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    proItems.forEach(i => i.classList.remove("active"));
+
+    item.classList.add("active");
+  });
+});
+
+
+/* =========================================================
+   MOBILE NAVIGATION TOGGLE
+   - Show / hide menu on mobile
+========================================================= */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+}
+
+
+/* =========================================================
+   TESTIMONIALS (LOAD MORE + RESPONSIVE BEHAVIOR)
+   - Mobile: show limited cards + load more button
+   - Desktop: show all cards
+========================================================= */
+
+const btn = document.querySelector(".load-more-btn");
+const cards = document.querySelectorAll(".testimonial-card");
+
+let visible = 4; 
+
+function handleTestimonials() {
+  if (window.innerWidth <= 768) {
+
+    cards.forEach((card, index) => {
+      card.style.display = index < visible ? "block" : "none";
+    });
+
+    if (btn) btn.style.display = "flex";
+
+  } else {
+
+    cards.forEach(card => {
+      card.style.display = "block";
+    });
+
+    if (btn) btn.style.display = "none";
+  }
+}
+
+handleTestimonials();
+
+window.addEventListener("resize", handleTestimonials);
+
+
+if (btn) {
+  btn.addEventListener("click", () => {
+
+    visible += 5;
+
+    cards.forEach((card, index) => {
+      if (index < visible) {
+        card.style.display = "block";
+      }
+    });
+
+    if (visible >= cards.length) {
+      btn.style.display = "none";
+    }
+  });
+}
