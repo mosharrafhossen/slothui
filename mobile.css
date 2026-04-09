@@ -236,7 +236,8 @@
   }
 
   .stats-desc {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
@@ -319,7 +320,8 @@
   .pro-item {
   border-left: 3px solid #E2E8F0;
   padding-left: 14px;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   }
 
  .pro-item h4 {
@@ -457,9 +459,7 @@
     margin-top: 10px;
   }
 
-  .office-card img {
-    
-  }
+
 
   .office-card h4 {
     font-size: 16px;
@@ -500,17 +500,10 @@
     padding: 14px 0;
   }
 
-  .faq-text {
-    
-  }
-
-  .faq-left i {
-    
-  }
-
 
   /*=========================== CTA  ==========================*/
-
+    /*
+      
 .cta {
   text-align: center;
 
@@ -518,17 +511,15 @@
 
 .cta-container {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
   gap: 30px;
-  margin-left: 0;
+  margin: 0;
 }
 
 .cta-left {
-  margin-left: -10px;
   max-width: 100%;
   text-align: left;
-  background-color: violet;
+  
 }
 
 .cta-left h2 {
@@ -583,6 +574,94 @@
   margin: 0;
   padding: 0;
 }
+    */
+
+
+
+     .cta {
+    text-align: left;
+    padding: 40px 16px 0;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    background: linear-gradient(
+      180deg,
+      #eef2ff 0%,
+      #e0e7ff 100%
+    );
+    border-radius: 16px;
+    padding: 24px 16px 0;
+    overflow: hidden;
+  }
+
+  .cta-left {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cta-left h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #1e293b;
+  }
+
+  .cta-left p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  /* buttons */
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 999px;
+  }
+
+  .btn-outline {
+    border: 1.5px solid #6366f1;
+    color: #4f46e5;
+    background: transparent;
+  }
+
+  .btn-fill {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    color: #fff;
+    border: none;
+  }
+
+  /* hide desktop image */
+  .cta-right {
+    display: none;
+  }
+
+  /* mobile image */
+  .mobile-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .mobile-cta img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
     
   /*=========================== footer ==========================*/
 
