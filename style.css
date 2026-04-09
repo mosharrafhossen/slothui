@@ -16,7 +16,7 @@ body {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;   /* 👈 ADD THIS */
+  padding: 0 20px;   
   background: #ffffff;
 }
 
@@ -140,7 +140,7 @@ body {
   letter-spacing: -1.8%;
   color: #1E293B;
 
-  max-width: 750px;   /* 👈 KEY */
+  max-width: 750px;  
   margin: 0 auto;
 }
 
@@ -205,7 +205,6 @@ body {
   color: #FFFFFF;
 }
 
-/* HERO IMAGE WRAPPER */
 .hero-desktop {
   display: flex;
   justify-content: center;
@@ -574,10 +573,10 @@ body {
   border: 1px solid #e5e7eb;
   transition: 0.3s;
 
-  display: inline-block; /* ✅ MUST */
+  display: inline-block;
   width: 100%;
   max-width: 336px;
-  margin-bottom: 15px; /* spacing between cards */
+  margin-bottom: 15px; 
 }
 
 .testimonial-card:hover {
@@ -640,9 +639,9 @@ body {
 
 
 .load-more-btn {
-  width: 100%;                     /* 🔥 full width */
-  max-width: 320px;                /* control size */
-  margin: 0 auto;                  /* center */
+  width: 100%;                     
+  max-width: 320px;               
+  margin: 0 auto;                  
   background: #4F46E5;
   color: #fff;
   border: none;
@@ -652,7 +651,7 @@ body {
   font-weight: 700;
   display: flex;
   align-items: center;
-  justify-content: center;         /* 🔥 text center */
+  justify-content: center;         
   gap: 10px;
   cursor: pointer;
 }
@@ -884,12 +883,11 @@ body {
 /*=========================== cta ==========================*/
 
 .cta { 
-      width: 100%; 
-      padding: 0; 
-      background: #EEF2FF;
-      overflow: hidden; 
-      height: auto;
-    }
+  width: 100%; 
+  padding: 0; 
+  overflow: hidden; 
+  height: auto;
+}
 
 .cta-container {
   max-width: 100%;
@@ -898,19 +896,14 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-   
   margin-right: 0;
-  gap: 20px;
+  gap: 0px;
 }
-
- 
-
-
 
 .cta-left {
   flex: 1;
-  max-width: 520px;
-  padding-left: 80px;
+  max-width: 700px;
+  padding-left: 50px;
   margin-left: 20px;
 }
 
@@ -924,9 +917,9 @@ body {
 }
 
 .cta-left p {
+  max-width: 550px;
   font-size: 18px;
   font-weight: 700;
-  color: #6b7280;
   line-height: 160%;
   color: #475569;
   margin-bottom: 30px;
@@ -945,11 +938,12 @@ body {
   padding: 12px 20px;
   border-radius: 999px;
   cursor: pointer;
+  margin-top: 12px;
 }
 
 .btn-outline {
   background: transparent;
-  border: 1.5px solid #6366F1;
+  border: 1.5px solid #4F46E5;
   color: #4F46E5;
 }
 
@@ -974,15 +968,19 @@ body {
 .cta-right {
   flex: 1;
   position: relative;
-
   display: flex;
   justify-content: flex-end; 
   align-items: center;
+  max-width: 650px;
 }
 
 .cta-right img {
   width: 100%;
   max-width: 600px;
+}
+
+.mobile-cta {
+  display: none;
 }
 
     
