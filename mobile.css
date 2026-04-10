@@ -67,7 +67,7 @@
     line-height: 20px;
     letter-spacing: -0.6%;
     padding: 6px 14px;
-    margin-top: 45px;
+    margin-top: 55px;
     border-radius: 999px;
   }
 
@@ -221,7 +221,7 @@
   /*=========================== stats ==========================*/
 
  .stats {
-    padding: 50px 16px;
+    padding: 60px 16px;
     margin-top: 20px;
   }
 
@@ -373,7 +373,7 @@
   /*=========================== testimonials ==========================*/
 
   .testimonials {
-    padding: 70px 16px;
+    padding: 60px 16px;
     text-align: center;
     margin: 0 auto;
     margin-top: 100px;
@@ -532,7 +532,7 @@
   /*=========================== faq ==========================*/
 
   .faq {
-    padding: 50px 16px;
+    padding: 70px 16px;
     background-color: #F8FAFC;
   }
 
@@ -585,6 +585,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    background-color: #EEF2FF;
     letter-spacing: -0.6%;
   }
 
