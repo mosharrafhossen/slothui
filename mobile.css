@@ -3,6 +3,10 @@
 @media (max-width: 768px) {
 
   /*=========================== hero ==========================*/
+
+ 
+
+
   body {
     margin: 0;
     padding: 0;
@@ -15,6 +19,7 @@
   .hero {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+
     text-align: center;
 
     background: linear-gradient(
@@ -122,6 +127,7 @@
   .brands {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+    
   }
 
   .brands-container {
