@@ -752,7 +752,7 @@ body {
 .faq {
   text-align: center;
   padding: 60px 20px;
-  background: #f9fafb;
+  background: #F8FAFC;
 }
 
 .section-badge6 {
@@ -801,9 +801,7 @@ body {
   padding: 15px 0;
 }
 
-.faq-item:last-child {
-  border-bottom: none;
-}
+
 
 .faq-question {
   width: 100%;

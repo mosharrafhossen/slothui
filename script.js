@@ -1,10 +1,6 @@
 
 
-/* =========================================================
-   FAQ ACCORDION FUNCTIONALITY
-   - Only one item stays open at a time
-   - Click toggles active state
-========================================================= */
+/* ========================================================= FAQ ========================================================= */
 
 const items = document.querySelectorAll(".faq-item");
 
@@ -22,10 +18,7 @@ items.forEach(item => {
 });
 
 
-/* =========================================================
-   SCROLL TO TOP BUTTON
-   - Smooth scroll to top when footer icon is clicked
-========================================================= */
+/* ======================================= SCROLL TO TOP BUTTON ====================================== */
 
 const scrollTopBtn = document.querySelector(".footer-bottom i");
 
@@ -39,11 +32,7 @@ if (scrollTopBtn) {
 }
 
 
-/* =========================================================
-   PROCRASTINATOR SECTION INTERACTION
-   - Highlights selected item
-   - Only one active at a time
-========================================================= */
+/* =========================================== PROCRASTINATOR =========================================== */
 
 const proItems = document.querySelectorAll(".pro-item");
 
@@ -57,10 +46,7 @@ proItems.forEach(item => {
 });
 
 
-/* =========================================================
-   MOBILE NAVIGATION TOGGLE
-   - Show / hide menu on mobile
-========================================================= */
+/* ========================================== MOBILE NAVIGATION TOGGLE ====================================== */
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
@@ -72,11 +58,7 @@ if (menuToggle && navLinks) {
 }
 
 
-/* =========================================================
-   TESTIMONIALS (LOAD MORE + RESPONSIVE BEHAVIOR)
-   - Mobile: show limited cards + load more button
-   - Desktop: show all cards
-========================================================= */
+/* =========================================== TESTIMONIALS (LOAD MORE ) ======================================= */
 
 const btn = document.querySelector(".load-more-btn");
 const cards = document.querySelectorAll(".testimonial-card");
