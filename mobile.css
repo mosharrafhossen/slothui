@@ -3,13 +3,15 @@
 @media (max-width: 768px) {
 
   /*=========================== hero ==========================*/
-  * {
-    padding: 0;
+  body {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+
   }
 
   .hero {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     text-align: center;
 
     background: linear-gradient(
@@ -20,13 +22,12 @@
       #899bf8 100%
     );
 
-    margin: 0;
-    padding: 0;
+    padding-bottom: 40px;
   }
 
   /* ================= NAVBAR ================= */
   .navbar {
-    padding: 16px;
+    padding: 16px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,13 +112,15 @@
 
   .hero-mobile img {
     width: 100%;
+    margin: 0;
   }
   /*=========================== brand ==========================*/
 
 
   .brands-container {
     padding: 30px 20px;
-    margin-top: 30px;
+
+    margin-top: 30px 0 0;
   }
 
   .brands-desktop {
@@ -597,10 +600,9 @@
   } 
 
   /*=========================== CTA  ==========================*/
-
+  
      .cta {
     text-align: left;
-    padding: 20px 0px;
   }
 
   .cta-container {
@@ -691,7 +693,7 @@
     height: 100%;
     object-fit: cover;
   }
-    
+  
   /*=========================== footer ==========================*/
 
 .footer {
