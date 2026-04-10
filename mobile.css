@@ -121,6 +121,9 @@
 
 
   .brands-container {
+
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     
     padding: 30px 20px;
 
@@ -168,6 +171,10 @@
   /*=========================== features ==========================*/
 
   .features-grid {
+
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
     grid-template-columns: 1fr;
     padding: 0 16px;
     margin-top: 20px;
@@ -228,6 +235,9 @@
   /*=========================== stats ==========================*/
 
  .stats {
+  width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
     padding: 60px 16px;
     margin-top: 20px;
   }
@@ -301,6 +311,9 @@
   /*=========================== procrastinator ==========================*/
 
  .procrastinator {
+  width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
   display: flex;
   flex-direction: column;
   padding: 0px 0px;
@@ -380,6 +393,9 @@
   /*=========================== testimonials ==========================*/
 
   .testimonials {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
     padding: 60px 16px;
     text-align: center;
     margin: 0 auto;
@@ -463,6 +479,9 @@
 
 
  .office {
+  width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
     padding: 40px 16px;
     margin-top: 20px;
     text-align: left;
@@ -539,6 +558,9 @@
   /*=========================== faq ==========================*/
 
   .faq {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+
     padding: 70px 16px;
     background-color: #F8FAFC;
   }
@@ -703,6 +725,9 @@
   /*=========================== footer ==========================*/
 
 .footer {
+  width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    
   padding: 50px 20px;
 }
 
