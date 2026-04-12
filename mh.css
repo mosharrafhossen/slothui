@@ -5,11 +5,8 @@
     /*=========================== hero ==========================*/
 
     .container {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      background: #ffffff;
-      overflow: hidden;
+
+      padding: 20px 0;
     }
 
     .hero {
@@ -21,16 +18,25 @@
         #c7d2fe 75%,
         #899bf8 100%
       );
-      padding-bottom: 0px;
       }
 
-      .navbar {
-      padding: 16px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-    }
+        .navbar {
+          padding: 12px 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          min-height: 60px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+    .logo img {
+  display: block;
+  transform: translateY(4px);
+}
 
     .nav-links,
     .auth-buttons {
@@ -56,6 +62,8 @@
       display: block;
       font-size: 22px;
       color: #475569;
+      margin: 0;
+      padding: 0;
     }
 
     .badge {
@@ -72,7 +80,6 @@
       width: 100%;
       max-width: 370px;
       font-size: 36px;
-      line-height: 40px;
       font-weight: 800;
       line-height: 44px;
       letter-spacing: -1.4%;
@@ -82,14 +89,14 @@
     }
 
     .hero p {
-      width: 370px;
-      font-size: 16px;
       font-weight: 400;
-      line-height: 160%;
-      margin-bottom: 28px;
       padding: 0 12px;
       color: #475569;
-    }
+      max-width: 370px;
+      margin: 0 auto 28px;
+      font-size: 16px;
+      line-height: 160%;
+        }
 
     .hero-buttons {
       display: flex;
