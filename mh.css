@@ -291,11 +291,9 @@
     /*=========================== procrastinator ==========================*/
 
     .procrastinator {
-
-
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 10px 20px;
     margin-top: 60px;
     align-items: flex-start;
     text-align: left;
@@ -306,7 +304,8 @@
       font-size: 14px;
       line-height: 20px;
       letter-spacing: -0.6%;
-      padding-top: 10px;
+      padding: 6px 12px;
+      margin-bottom: 15px;
     }
 
 
@@ -372,8 +371,6 @@
     /*=========================== testimonials ==========================*/
 
     .testimonials {
-
-
       padding: 60px 16px;
       text-align: center;
       margin: 0 auto;
@@ -449,8 +446,21 @@
     }
 
     .load-more-btn {
-      margin-top: 0px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: -0.6%;
     }
+
+    .load-more-btn span {
+        font-size: 28px;
+        font-weight: 300;
+        display: inline-block;
+        transform: translateY(-3px);
+      }
+
+  
 
     
     /*=========================== office ==========================*/
