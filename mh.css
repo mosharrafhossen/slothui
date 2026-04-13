@@ -467,18 +467,19 @@
 
 
   .office {
-
-
       padding: 40px 16px;
       margin-top: 20px;
       text-align: left;
       background-color: #FFFFFF;
+      margin: 0 auto;
     }
 
     .office-top {
       margin: 0;
       padding: 0 25px;
       max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
     }
 
     .section-badge4 {
@@ -504,6 +505,7 @@
       line-height: 160%;
       width: 100%;
       max-width: 300px;
+      margin: 0 auto;
     }
 
     .office-grid {
@@ -512,6 +514,7 @@
       flex-direction: column;
       align-items: center;
       gap: 16px;
+      margin-top: 30px;
     }
 
     .office-card {
@@ -520,7 +523,7 @@
       border: 1px solid #E2E8F0;
       text-align: left;
       width: 100%;
-      max-width: 400px;
+      max-width: 300px;
       margin-top: 10px;
     }
 
