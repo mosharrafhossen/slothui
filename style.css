@@ -41,11 +41,13 @@ body {
 
 
 .navbar {
-  width: 100%;
-  padding: 16px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(10px, 2vw, 16px) clamp(4px, 3vw, 40px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px; 
+
 }
 
 
@@ -54,28 +56,33 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px;
-  gap: 8px;
 }
 
 .logo img {
   width: 109px;
   height: auto;
+  width: clamp(80px, 10vw, 110px);
 }
+
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 32px;
+  gap: clamp(12px, 2vw, 32px);
+  flex: 1;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .nav-links a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: clamp(13px, 1.2vw, 16px);
   font-weight: 700;
   color: #475569;
   line-height: 22px;
   letter-spacing: -0.7%;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -85,6 +92,8 @@ body {
 .auth-buttons {
   display: flex;
   gap: 10px;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .signup-outline {
@@ -118,6 +127,8 @@ body {
 .signup-outline,
 .login-fill {
   white-space: nowrap;
+  padding: clamp(8px, 1vw, 12px) clamp(12px, 2vw, 20px);
+  font-size: clamp(13px, 1.2vw, 16px);
 }
 
 .badge {
