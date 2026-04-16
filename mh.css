@@ -147,7 +147,7 @@
 
     .brand-row img {
       width: 100%;
-      max-width: 100px;
+      max-width: px;
       height: 60px;
       object-fit: contain;
       
