@@ -15,9 +15,7 @@ body {
 .container {
   width: 100%;
   max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;   
-  background: #ffffff;
+  background: #FFFFFF;
 }
 
 
@@ -54,7 +52,6 @@ body {
 
 .logo {
   display: flex;
-  padding: 0px;
   align-items: center;
   gap: 8px;
   padding: 10px;
@@ -116,6 +113,11 @@ body {
   font-weight: 700;
   line-height: 22px;
   cursor: pointer;
+}
+
+.signup-outline,
+.login-fill {
+  white-space: nowrap;
 }
 
 .badge {
@@ -238,7 +240,7 @@ body {
 
 .brands-container {
   max-width: 100%;
-  padding: 64px 112px;
+  padding: 40px 20px;
 }
 
 .brands-desktop {
@@ -250,6 +252,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .brands-desktop .brand-row:last-child {
