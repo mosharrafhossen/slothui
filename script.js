@@ -34,7 +34,7 @@ if (scrollTopBtn) {
 
 /* =========================================== PROCRASTINATOR =========================================== */
 
-const proItems = document.querySelectorAll(".pro-item");
+/*const proItems = document.querySelectorAll(".pro-item");
 
 proItems.forEach(item => {
   item.addEventListener("click", () => {
@@ -44,6 +44,29 @@ proItems.forEach(item => {
     item.classList.add("active");
   });
 });
+*/
+
+
+
+const proItems = document.querySelectorAll(".pro-item");
+const proImage = document.querySelector(".pro-right img");
+
+proItems.forEach(item => {
+  item.addEventListener("click", () => {
+
+    // active class remove
+    proItems.forEach(i => i.classList.remove("active"));
+    item.classList.add("active");
+
+    // image change
+    const newImg = item.getAttribute("data-img");
+    if (proImage && newImg) {
+      proImage.src = newImg;
+    }
+
+  });
+});
+
 
 
 /* ========================================== MOBILE NAVIGATION TOGGLE ====================================== */

@@ -547,6 +547,10 @@ body {
   margin: 0%;
 }
 
+.pro-right img {
+  transition: opacity 0.5s ease;
+}
+
 /*=========================== testimonials ==========================*/
 
 .testimonials {
