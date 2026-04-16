@@ -373,55 +373,101 @@ body {
 /*=========================== stats ==========================*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .stats {
   text-align: center;
-  padding: 80px 20px;
+    padding: 80px 20px;
+  padding: clamp(50px, 8vw, 100px) clamp(16px, 4vw, 40px);
   background: #F8FAFC;
-  margin-top: 80px;
+  margin-top: clamp(40px, 6vw, 80px);
 }
 
+
+/* ICON */
 .stats-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  color: #4F46E5;
+  margin-bottom: clamp(12px, 2vw, 20px);
+    color: #4F46E5;
 }
+
 
 .stats-icon img {
-  width: 40px;
-  height: 40px;
+  width: clamp(30px, 4vw, 40px);
+  height: auto;
 }
 
+
+/* HEADING */
 .stats h2 {
-  font-size: 36px;
+  font-size: clamp(24px, 4vw, 36px);
   font-weight: 800;
   color: #1E293B;
-  margin-bottom: 20px;
-  line-height: 44px;
+  margin-bottom: clamp(12px, 2vw, 20px);
+  line-height: 1.2;
+    line-height: 44px;
   letter-spacing: -1.4%;
 }
 
+
+/* DESCRIPTION */
 .stats-desc {
-  max-width: 800px;
-  margin: 0 auto 50px;
+  max-width: clamp(280px, 80%, 800px);
+  margin: 0 auto clamp(30px, 5vw, 50px);
   color: #475569;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   line-height: 1.6;
-  font-weight: 400;
-  line-height: 160%;
+    font-weight: 400;
+
 }
 
+
+/* GRID (IMPORTANT CHANGE) */
 .stats-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: clamp(16px, 3vw, 30px);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+
+
+/* CARD */
 .stat-box {
   text-align: center;
-  position: relative;
+  padding: clamp(10px, 2vw, 20px);
   padding: 0 40px;
   border-right: 1px solid #CBD5E1;
 }
@@ -430,22 +476,27 @@ body {
   border-right: none;
 }
 
+/* NUMBER */
 .stat-box h3 {
-  font-size: 60px;
+  font-size: clamp(28px, 6vw, 60px);
   font-weight: 700;
   color: #4F46E5;
   margin-bottom: 6px;
+  line-height: 1.1;
   line-height: 68px;
   letter-spacing: -1.8%;
 }
 
+
+/* TEXT */
 .stat-box p {
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 18px);
+  color: #475569;
+  font-weight: 600;
   letter-spacing: -0.8%;
   line-height: 24px;
-  color: #475569;
-  font-weight: 700;
 }
+
 
 /*=========================== procrastinator ==========================*/
 
@@ -550,6 +601,7 @@ body {
 .pro-right img {
   transition: opacity 0.5s ease;
 }
+
 
 /*=========================== testimonials ==========================*/
 
