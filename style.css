@@ -951,6 +951,8 @@ body {
 
 /*=========================== cta ==========================*/
 
+
+
 .cta { 
   width: 100%; 
   padding: 0; 
@@ -1051,50 +1053,45 @@ body {
   display: none;
 }
 
-    
 
 /*=========================== Footer ==========================*/
-
-
-
-
 
 
 .footer {
   width: 100%;
   background: #F8FAFC;
-  padding: 96px 112px;
+  padding: clamp(50px, 8vw, 96px) clamp(20px, 6vw, 112px);
 }
 
 .footer-container {
-  max-width: 1400px;
-  width: 100%;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: clamp(20px, 4vw, 40px);
+  margin-bottom: clamp(30px, 5vw, 50px);
 }
 
+
+
 .footer-grid h4 {
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 16px);
   font-weight: 700;
   color: #1E293B;
+  margin-bottom: 10px;
   line-height: 22px;
-  margin-bottom: 12px;
   letter-spacing: -0.7%;
 }
 
-.footer-grid ul {
-  list-style: none;
-}
 
 .footer-grid li {
   font-weight: 500;
-  font-size: 16px;
+  font-size: clamp(13px, 1.5vw, 16px);
   color: #475569;
   line-height: 22px;
   letter-spacing: -0.7%;
@@ -1107,41 +1104,56 @@ body {
   color: #111827;
 }
 
+.footer-grid ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+
+/* ================= BOTTOM ================= */
+
 .footer-bottom {
-  width: 100%;
+  border-top: 1px solid #CBD5E1;
+  padding-top: clamp(20px, 4vw, 32px);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #CBD5E1;
+  gap: 20px;
+
+  flex-wrap: wrap; 
+  width: 100%;
   position: relative;
-  padding-top: 32px;
+
 }
 
 .footer-logo img {
-  width: 109px;
+  width: clamp(80px, 10vw, 110px);
   height: auto;
   margin: 0;
 }
 
 .footer-bottom i {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   border: 1px solid #CBD5E1;
   border-radius: 50%;
   padding: 10px;
-  cursor: pointer;
   font-size: 14px;
   color: #475569;
-  transition: 0.3s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 
 
 .copyright {
+  font-size: clamp(12px, 1.5vw, 14px);
+  color: #94A3B8;
   font-weight: 500;
-  font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.6%;
-  color: #94A3B8;
   margin: 0;
 }
+
+
