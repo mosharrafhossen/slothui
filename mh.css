@@ -156,7 +156,7 @@
     /*=========================== features ==========================*/
 
     .features {
-      padding: 20px 16px;
+      padding: 60px 16px;
     }
 
     .features-grid {
@@ -218,7 +218,7 @@
     /*=========================== stats ==========================*/
 
     .stats {
-      padding: 70px 16px;
+      padding: 60px 16px;
       margin-top: 20px;
     }
 
@@ -287,11 +287,9 @@
     /*=========================== procrastinator ==========================*/
 
     .procrastinator {
-      padding: 10px 16px;
+      padding: 90px 16px;
     display: flex;
     flex-direction: column;
-    
-    margin-top: 60px;
     align-items: flex-start;
     text-align: left;
     }
@@ -469,10 +467,8 @@
 
 
   .office {
-      padding: 30px 16px;
-      margin-top: 20px;
+      padding: 60px 16px;
       text-align: left;
-      background-color: #FFFFFF;
       margin: 0 auto;
     }
 
@@ -549,15 +545,13 @@
     /*=========================== faq ==========================*/
 
     .faq {
-      padding: 70px 16px;
-      background-color: #F8FAFC;
+      padding: 60px 16px;
     }
 
      .section-badge6 {
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
-      background-color: #EEF2FF;
       letter-spacing: -0.6%;
       margin: 0;
     }
@@ -624,13 +618,12 @@
     /*=========================== CTA  ==========================*/
     
       .cta {
+        padding: 60px 0px;
       text-align: left;
     }
 
     .cta-container {
       flex-direction: column;
-      background: linear-gradient(180deg,#eef2ff 0%,#e0e7ff 100%
-      );
       overflow: hidden;
       padding: clamp(30px, 6vw, 80px) clamp(16px, 5vw, 60px);
       
@@ -721,7 +714,7 @@
 
   .footer {
   
-    padding: 50px 16px;
+    padding: 60px 16px;
   }
 
   .footer-container {

@@ -720,7 +720,7 @@ body {
 
 .office {
   padding: clamp(40px, 6vw, 100px) clamp(16px, 4vw, 40px);
-  background: #f9fafb;
+  background: #FFFFFF;
   text-align: start;
 }
 
@@ -934,11 +934,11 @@ body {
   padding: 0; 
   overflow: hidden; 
   height: auto;
+  background-color: #EEF2FF;
 }
 
 .cta-container {
   max-width: 100%;
-  background-color: #EEF2FF;
   display: flex;
   align-items: center;
   justify-content: space-between;
