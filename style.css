@@ -481,17 +481,19 @@ body {
   align-items: center;
 }
 
+
 .pro-top {
-  grid-column: span 2;
-  max-width: 750px;
+  grid-column: 1 / -1;
+  max-width: clamp(260px, 90%, 750px);
+  width: 100%;
 }
 
 .section-badge {
   display: inline-block;
   background: #eef2ff;
   color: #4F46E5;
-  font-size: 14px;
-  padding: 6px 12px;
+  font-size: clamp(12px, 1.5vw, 14px);
+  padding: clamp(4px, 1vw, 6px) clamp(10px, 2vw, 12px);
   border-radius: 20px;
   margin-bottom: 12px;
   font-weight: 600;
@@ -499,23 +501,25 @@ body {
   letter-spacing: -0.6%;
 }
 
+
 .pro-top h2 {
-  font-size: 36px;
+  font-size: clamp(18px, 4vw, 36px);
   font-weight: 800;
   color: #1E293B;
-  margin-bottom: 12px;
-  line-height: 44px;
+   margin-bottom: clamp(10px, 2vw, 12px);
+  line-height: clamp(24px, 7vw, 44px);
   letter-spacing: -1.4%;
 }
 
 
 .section-desc1 {
   color: #6b6f80;
-  font-size: 20px;
+  font-size: clamp(13px, 3.5vw, 20px);
   line-height: 1.6;
   font-weight: 400;
   line-height: 160%;
 }
+
 
 .pro-left {
   display: flex;
@@ -573,6 +577,24 @@ body {
 .pro-right img {
   transition: opacity 0.5s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*=========================== testimonials ==========================*/
