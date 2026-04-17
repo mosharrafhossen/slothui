@@ -262,7 +262,7 @@ body {
 .brands-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(40px, 5vw, 80px) 20px;
+  padding: clamp(40px, 5vw, 64px) 20px;
 }
 
 .brands-desktop {
@@ -304,7 +304,7 @@ body {
   width: 100%;
   text-align: center;
   background: #FFFFFF;
-  padding: clamp(20px, 6vw, 60px) 20px;
+  padding: clamp(20px, 6vw, 90px) 20px;
 }
 
 
@@ -385,10 +385,8 @@ body {
 
 .stats {
   text-align: center;
-    padding: 80px 20px;
-  padding: clamp(50px, 8vw, 100px) clamp(16px, 4vw, 40px);
+  padding: clamp(50px, 8vw, 90px) clamp(16px, 4vw, 40px);
   background: #F8FAFC;
-  margin-top: clamp(40px, 6vw, 80px);
 }
 
 
@@ -476,7 +474,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  padding: 80px 8%;
+  padding: clamp(40px, 6vw, 90px) clamp(50px, 4vw, 110px);
   background: #FFFFFF;
   align-items: center;
 }
@@ -583,7 +581,7 @@ body {
 
 .testimonials {
   text-align: center;
-  padding: clamp(50px, 8vw, 100px) clamp(16px, 4vw, 40px);
+  padding: clamp(50px, 8vw, 90px) clamp(16px, 4vw, 40px);
   background: #F8FAFC;
 }
 
@@ -719,7 +717,7 @@ body {
 /*=========================== office ==========================*/
 
 .office {
-  padding: clamp(40px, 6vw, 100px) clamp(16px, 4vw, 40px);
+  padding: clamp(40px, 6vw, 60px) clamp(16px, 4vw, 40px);
   background: #FFFFFF;
   text-align: start;
 }
@@ -811,7 +809,7 @@ body {
 
 .faq {
   text-align: center;
-  padding: clamp(60px, 8vw, 100px) 20px;
+  padding: clamp(60px, 8vw, 90px) 20px;
   background: #F8FAFC;
 }
 
@@ -1036,7 +1034,7 @@ body {
 .footer {
   width: 100%;
   background: #F8FAFC;
-  padding: clamp(50px, 8vw, 96px) clamp(20px, 6vw, 112px);
+  padding: clamp(50px, 8vw, 90px) clamp(20px, 6vw, 110px);
 }
 
 .footer-container {
